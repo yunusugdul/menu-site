@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Dancing+Script&family=Domine:wght@400;700&family=Handlee&family=Lobster&family=Lumanosimo&family=Oswald:wght@300;500&family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="home"></div>
+    <a id="basadonbutonu" href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+        <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </a>
+
+    <!-- header section start -->
+    <header class="position-fixed top-0 z-1 shadow-lg">
+      <nav
+        class="navbar fixed-top px-2 px-lg-5 bg-light"
+        style="background-color: rgba(0, 0, 0, 0.6)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark" href="#">İsim / Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Başlık</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Anasayfa</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pizzalar">Pizzalarımız</a>
+                </li>
+                <!-- <li class="nav-item dropdown-box">
+                  <button
+                    class="navbar-toggler ps-0 d-block w-100 text-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <div
+                      style="font-size: 1rem"
+                      class="d-flex align-items-center"
+                    >
+                      Kategori 2
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14 "
+                        fill="currentColor"
+                        class="bi bi-arrow-down"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#makarnalar">Makarnalarımız</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#corbalar">Çorbalarımız</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sandvicler">Sandviçlerimiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#salatalar">Salatalarımız</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tatlilar">Tatlılarımız</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#icecekler">İçeceklerimiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#atistirmaliklar"
+                    >Atıştırmalıklarımız</a
+                  >
+                </li>
+              </ul>
+              <div class="social">
+                <h6 class="text-center mt-3">Sosyal Medyamızı Ziyaret Edin</h6>
+                <ul>
+                  <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                  </a></li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main>
+      <div class="container-fluid p-0 pt-5 h-100 dark-bg-image">
+        <div class="row h-100 w-100 m-0">
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column text-white"
+          >
+            <h1>Lorem ipsum dolor</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="main-logo-container p-3 position-relative d-flex flex-column"
+            >
+              <h3 class="text-center pb-2 position-sticky top-0 bg-light">
+                Restoran Adı
+              </h3>
+              <div class="table-box">
+                <table class="table table-borderless table-hover">
+                  <tbody>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#pizzalar">
+                          <span>Pizzalar</span>
+                          <img
+                            src="assets/img/pizza.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#makarnalar">
+                          <span>Makarnalar</span>
+                          <img
+                            src="assets/img/makarna.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#corbalar">
+                          <span>Çorbalar</span>
+                          <img
+                            src="assets/img/corba.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#sandvicler">
+                          <span>Sandviçler</span>
+                          <img
+                            src="assets/img/sandvic.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#salatalar">
+                          <span>Salatalar</span>
+                          <img
+                            src="assets/img/salata.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#tatlilar">
+                          <span>Tatlılar</span>
+                          <img
+                            src="assets/img/tatlı.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#icecekler">
+                          <span>İçecekler</span>
+                          <img
+                            src="assets/img/icecek.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2">
+                        <a href="#atistirmaliklar">
+                          <span>Atıştırmalıklar</span>
+                          <img
+                            src="assets/img/atistirmalik.jpg"
+                            alt="örnek resim"
+                            class="rounded"
+                          />
+                        </a>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pizza menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="pizzalar" class="my-5">Pizzalarımız</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/pizza.jpg" alt="pizza resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Pizza Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 76.99₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- pizza menüsü end -->
+      <!-- makarna menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center dark-theme"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="makarnalar" class="my-5">Makarnalarımız</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/makarna.jpg" alt="makarna resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Makarna Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 56.00₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- makarna menüsü end -->
+      <!-- corba menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="corbalar" class="my-5">Çorbalarımız</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/corba.jpg" alt="corba resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Çorba Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 46.99₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- corba menüsü end -->
+      <!-- sandvic menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center dark-theme"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="sandvicler" class="my-5">Sandviçlerimiz</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/sandvic.jpg" alt="sandvic resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Sandviç Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 50.00₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- sandvic menüsü end -->
+      <!-- salata menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="salatalar" class="my-5">Salatalarımız</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/salata.jpg" alt="salata resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Salata Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 30.00₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- salata menüsü end -->
+      <!-- tatlı menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center dark-theme"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="tatlilar" class="my-5">Tatlılarımız</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/tatlı.jpg" alt="tatlı resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Tatlı Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 35.00₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- tatlı menüsü end -->
+      <!-- içecek menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="icecekler" class="my-5">İçecekler</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img src="assets/img/icecek.jpg" alt="içecek resmi" />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">İçecek Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 20.00₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- içecek menüsü end -->
+      <!-- atistirmalik menüsü start -->
+      <section
+        class="menu-container container-fluid d-flex justify-content-center dark-theme"
+      >
+        <div class="table-responsive">
+          <table class="table caption-top table-hover">
+            <caption class="text-center">
+              <h2 id="atistirmaliklar" class="my-5">Atıştırmalıklarımız</h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+              <tr>
+                <td class="food-image-box">
+                  <div class="img-container">
+                    <img
+                      src="assets/img/atistirmalik.jpg"
+                      alt="atistirmalik resmi"
+                    />
+                  </div>
+                </td>
+                <td class="food-name-box">
+                  <div class="food-name">Atıştırmalık Adı</div>
+                  <div class="food-info">
+                    Yemek hakkında kısa bilgilendirmeYemek hakkında kısa
+                    bilgilendirmeYemek hakkında kısa bilgilendirme
+                  </div>
+                </td>
+                <td class="pt-4">
+                  <em class="food-price fw-bold"> 45.00₺ </em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- atistirmalik menüsü end -->
+    </main>
+    <!-- main section end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

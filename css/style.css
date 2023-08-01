@@ -1,0 +1,291 @@
+*:focus{
+    box-shadow: none !important;
+}
+
+html,body{
+    height: 100%;
+    height: 100%;
+}
+
+body
+{
+    font-family: Helvetica, Sans-Serif;
+}
+
+#basadonbutonu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#basadonbutonu:hover{
+    box-shadow: 0px 0px 3px white;
+}
+
+a{
+    text-decoration: none !important;
+    color: black;
+}
+
+.dark-theme{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar button[class="navbar-toggler"]{
+    border: none;
+}
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .offcanvas .offcanvas-header h5{
+    text-align: center;
+    display: block;
+    width: 100%; 
+    border-bottom: 1px solid gray;
+}
+.navbar .offcanvas .nav-item{
+    padding-left: 10px;
+}
+
+.navbar .offcanvas .nav-item:hover{
+    background-color: gray;
+}
+
+.navbar .offcanvas li.nav-item:nth-child(odd){
+    background-color:rgb(230, 228, 225);
+}
+
+.dropdown-box .navbar-toggler{
+    border: none ;
+    padding: 11px 0px;
+
+}
+
+.navbar .offcanvas .social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid gray;
+}
+
+.navbar .offcanvas .social ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar .offcanvas .social ul li{
+    margin-right: 1rem;
+}
+
+.navbar .offcanvas .social ul li a:hover{
+    color: gray;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+main .dark-bg-image{
+    --image: url(/assets/img/restaurant-background-image.jpg);
+    background: linear-gradient(rgb(0 0 0 / 60%)0 0), var(--image) no-repeat center/cover; 
+}
+
+
+main .main-logo-container{
+    background-color:white;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 2rem ;
+    box-shadow: 0px 0px 10px black;
+    transform: translateY(1.6rem);
+}
+
+
+
+main .main-logo-container h3{
+    color: black;
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+main .main-logo-container .table-box{
+    height: 24.5rem;
+    overflow-y: auto;
+}
+
+main .main-logo-container span{
+    font-size: 1.1rem;
+}
+
+main .main-logo-container .table-box::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: gray;
+    border-radius: 0.5rem;
+}
+
+main .main-logo-container .table-box::-webkit-scrollbar-thumb{
+    background-color: rgb(50, 50, 50);
+    border-radius: 0.5rem;
+}
+
+main .main-logo-container .table-box::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(30, 30, 30);
+}
+
+
+main .main-logo-container table tbody tr th a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main .main-logo-container table tbody tr th a img{
+    width: 4rem;
+}
+
+/* yemek menüleri açık tema tasarımı başlangıcı */
+main .menu-container table{
+    width: 40rem;
+}
+
+main .menu-container table caption{
+    margin-top: 2rem;
+    font-family: 'Lumanosimo', cursive;
+}
+
+main .menu-container table caption h2{
+    display: inline-block ;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+main .menu-container table tbody .food-image-box{
+    width: 7rem;
+    height: auto;
+}
+
+
+main .menu-container table tbody .food-image-box img{
+    width: 7rem;
+    height: auto;
+    border-radius: 0.6rem;
+    transition: all .6s ease;
+}
+
+main .menu-container table tbody .food-image-box .img-container{
+    overflow: hidden;
+    border-radius: 0.6rem;
+}
+
+main .menu-container table tbody .food-image-box img:hover{
+    transform: scale(1.1);
+}
+
+main .menu-container table tbody .food-name{
+font-size: 1.2rem;
+border-bottom: 1px solid gray;
+padding-bottom: 0.3rem ;
+}
+
+
+main .menu-container table tbody .food-info{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    color: rgba(0, 0, 0, 0.7);  
+}
+
+main .menu-container table tbody .food-price{
+    color: tomato;
+}
+/* yemek menüleri açık tema tasarımı bitişi */
+
+/* yemek menüleri koyu tema tasarımı başlangıcı */
+main .menu-container.dark-theme table tbody .food-name{
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+main .menu-container.dark-theme table tbody .food-info{
+    color: rgba(255, 255, 255, 0.7);  
+}
+
+main .menu-container.dark-theme table tbody .food-price{
+    color: white;
+}
+/* yemek menüleri koyu tema tasarımı bitişi */
+
+#pizzalar{
+    color: white;
+    background-color: tomato;
+}
+
+#makarnalar{
+    color: yellow;
+}
+
+#corbalar{
+    color: white;
+    background-color: tomato;
+}
+
+#sandvicler{
+    color: burlywood;
+}
+
+#salatalar{
+    color: white;
+    background-color: rgb(21, 216, 21);
+}
+
+#tatlilar{
+    color:chocolate;
+}
+
+#icecekler{
+    color: white;
+    background-color: orange;
+}
+
+#atistirmaliklar{
+    color: burlywood;
+}
+/* @media sorguları start*/
+
+@media only screen and (max-width: 575px) {
+    html {
+      font-size: 70%;
+    }
+}
+  @media only screen and (min-width: 576px) {
+    html {
+      font-size:80%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    html {
+      font-size:90%;
+    }
+  }
+
+  @media only screen and (min-width:992px) {
+    html {
+      font-size:100%;
+    }
+  }
+/* @media sorguları end*/
